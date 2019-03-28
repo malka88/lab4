@@ -1,0 +1,22 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+    <Grid>
+        <DataGrid x:Name="data" HorizontalAlignment="Left" Height="369" VerticalAlignment="Top" Width="450" SelectionChanged="DataGrid_SelectionChanged">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding number}" ClipboardContentBinding="{x:Null}" Header="number"/>
+                <DataGridTextColumn Binding="{Binding fio}" ClipboardContentBinding="{x:Null}" Header="fio"/>
+                <DataGridTextColumn Binding="{Binding rateM}" ClipboardContentBinding="{x:Null}" Header="rateM"/>
+                <DataGridTextColumn Binding="{Binding rateP}" ClipboardContentBinding="{x:Null}" Header="rateP"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="add"  Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="475,33,0,0" Click="add_Click"/>
+        <Button x:Name="red" Content="Редактировать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="475,82,0,0"/>
+        <Button x:Name="del" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="475,131,0,0"/>
+    </Grid>
+</Window>
