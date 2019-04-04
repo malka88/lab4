@@ -17,17 +17,14 @@
                 <RowDefinition />
                 <RowDefinition />
                 <RowDefinition />
-                <RowDefinition />
             </Grid.RowDefinitions>
 
-            <Label x:Name="lnum" Content="Номер" Grid.Column="0" Grid.Row="0"/>
-            <Label x:Name="lfio" Content="ФИО" Grid.Column="0" Grid.Row="1"/>
-            <Label x:Name="lrateM" Content="Оценка по математике" Grid.Column="0" Grid.Row="2"/>
-            <Label x:Name="lrateP" Content="Оценка по физике" Grid.Column="0" Grid.Row="3"/>
-            <TextBox x:Name="num" HorizontalContentAlignment="Center" Grid.Column="2" Grid.Row="0" TextChanged="num_TextChanged"/>
-            <TextBox x:Name="fio" HorizontalContentAlignment="Center" Grid.Column="2" Grid.Row="1" TextChanged="fio_TextChanged"/>
-            <TextBox x:Name="rateM" HorizontalContentAlignment="Center" Grid.Column="2" Grid.Row="2" TextChanged="rateM_TextChanged"/>
-            <TextBox x:Name="rateP" HorizontalContentAlignment="Center" Grid.Column="2" Grid.Row="3" TextChanged="rateP_TextChanged"/>
+            <Label x:Name="lfio" Content="ФИО" Grid.Column="0" Grid.Row="0"/>
+            <Label x:Name="lrateM" Content="Оценка по математике" Grid.Column="0" Grid.Row="1"/>
+            <Label x:Name="lrateP" Content="Оценка по физике" Grid.Column="0" Grid.Row="2"/>
+            <TextBox x:Name="fio" HorizontalContentAlignment="Center" Grid.Column="2" Grid.Row="0" TextChanged="fio_TextChanged"/>
+            <TextBox x:Name="rateM" HorizontalContentAlignment="Center" Grid.Column="2" Grid.Row="1" TextChanged="rateM_TextChanged"/>
+            <TextBox x:Name="rateP" HorizontalContentAlignment="Center" Grid.Column="2" Grid.Row="2" TextChanged="rateP_TextChanged"/>
         </Grid>
         <Button Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="102,129,0,0" Click="Button_Click"  />
     </Grid>

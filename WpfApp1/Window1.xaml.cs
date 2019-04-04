@@ -29,11 +29,6 @@ namespace WpfApp1
             this.DialogResult = true;
         }
 
-        private void num_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
-        }
-
         private void fio_TextChanged(object sender, TextChangedEventArgs e)
         {
 

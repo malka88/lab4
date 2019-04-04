@@ -9,14 +9,14 @@
     <Grid>
         <DataGrid x:Name="data" HorizontalAlignment="Left" Height="369" VerticalAlignment="Top" Width="450" SelectionChanged="DataGrid_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding number}" ClipboardContentBinding="{x:Null}" Header="number"/>
-                <DataGridTextColumn Binding="{Binding fio}" ClipboardContentBinding="{x:Null}" Header="fio"/>
-                <DataGridTextColumn Binding="{Binding rateM}" ClipboardContentBinding="{x:Null}" Header="rateM"/>
-                <DataGridTextColumn Binding="{Binding rateP}" ClipboardContentBinding="{x:Null}" Header="rateP"/>
+                <DataGridTextColumn Binding="{Binding number}" ClipboardContentBinding="{x:Null}" Header="Номер" Width="80"/>
+                <DataGridTextColumn Binding="{Binding fio}" ClipboardContentBinding="{x:Null}" Header="ФИО" Width="210"/>
+                <DataGridTextColumn Binding="{Binding rateM}" ClipboardContentBinding="{x:Null}" Header="Оцнка мат." Width="80"/>
+                <DataGridTextColumn Binding="{Binding rateP}" ClipboardContentBinding="{x:Null}" Header="Оценка физ." Width="80"/>
             </DataGrid.Columns>
         </DataGrid>
         <Button x:Name="add"  Content="Добавить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="475,33,0,0" Click="add_Click"/>
-        <Button x:Name="red" Content="Редактировать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="475,82,0,0"/>
-        <Button x:Name="del" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="475,131,0,0"/>
+        <Button x:Name="red" Content="Редактировать" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="475,82,0,0" Click="red_Click"/>
+        <Button x:Name="del" Content="Удалить" HorizontalAlignment="Left" VerticalAlignment="Top" Width="90" Margin="475,131,0,0" Click="del_Click"/>
     </Grid>
 </Window>
